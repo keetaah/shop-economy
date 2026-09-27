@@ -1,0 +1,303 @@
+body {
+    margin:0;
+    background-image: url("C:/Users/Mykyta/Desktop/practice/img/background.png");
+    background-size: 100%;
+    background-position: center;
+
+    background-size: cover;
+}
+.title{
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.details{
+    background-color: black;
+    color:white;
+    border-radius: 30px;
+    border: none;
+}
+.details:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-color:black;
+    padding: 30px;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+}
+.card button{
+    background-color: rgb(1, 255, 35);
+
+}
+.price{
+    font-size: larger;
+}
+.card{
+    transition: transform 0,3 ease;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.nav a{
+    color: rgb(253, 251, 255);
+    margin: 0px 20px;
+    flex:1;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    border: 5px solid #9ef007;
+    border-color: #ecbdb4;
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    font-size: larger;
+}
+.nav a:hover{
+    color:rgb(217, 255, 0);
+    cursor: pointer;
+    border-color: black;
+}
+
+article > button{
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    font:bold;
+}
+.card img{
+    width: 100%;
+}
+
+.autorisation{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;          
+    padding: 30px;
+    background-color: #ffffff;   
+    border-radius: 12px;         
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+}
+.formreg{
+    text-align: right;
+}
+.auth-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 25px);
+}
+.buttonsreg{
+    text-align: center;
+}
+.registrat{
+    color:purple;
+    background-color: #9ef007;
+    border-radius: 10px;
+    font-size: larger;
+}
+.clear{
+    color:purple;
+    background-color: #9ef007;
+    border-radius: 10px;
+    font-size: larger;
+}
+.registrat:hover{
+    cursor: pointer;
+    transition: transform 0,3 ease;
+    overflow: visible;
+}
+.clear{
+    cursor: pointer;
+    transition: transform 0,3 ease;
+    overflow: visible;
+}
+.checkboxes{
+    text-align: left;
+}
+.loginbut{
+    color:purple;
+    background-color: #9ef007;
+    border-radius: 10px;
+    font-size: larger;
+}
+.loginbut:hover{
+    cursor: pointer;
+    transition: transform 0,3 ease;
+    overflow: visible;
+}
+.buttonslog{
+    text-align: center;
+}
+.account{
+    position: relative;
+}
+.account-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+}
+.account:hover .account-menu{
+    display: block;
+}
+.account-menu a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.account-menu a:hover{
+    background-color: lightgray;
+}
+.logoshop{
+    height: 500px;
+    width: 900px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.textabout{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: larger;
+}
+.endabout{
+    text-align: center;
+    font-size:60px;
+    color: red;
+}
+.owner{
+    font-size: 40px;
+    margin: 0px 100px 0px 100px;
+    text-align: center;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+.optservice{
+    position: relative;
+    width: 1100px;
+    min-height: 150px;
+    display: block;
+    margin:auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(236, 122, 122);
+    padding: 5px;
+    overflow: hidden;
+    transition: 3s;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(31, 85, 80);
+    font-size: 30px;
+}
+.service-info{
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: burlywood;
+    align-items: start;
+    color: black;
+
+}
+.optservice:hover .service-info{
+    display:contents;
+}
+#trade-in{
+    background-color: aqua;
+}
+#buy-sell{
+    background-color: aquamarine;
+}
+#selection{
+    background-color: burlywood;
+}
+#adaptation{
+    background-color: cornsilk;
+}
+#granny{
+    background-color: floralwhite;
+}
+#moboperator{
+    background-color:lightpink;
+}
+#repair{
+    background-color: mistyrose;
+}
+.searcharea{
+    width: 200px;
+}
+.button-header:hover{
+    background-color: rgb(0, 0, 163);
+}
+.modal {
+    display: none;
+}
+
+.modal:target {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.buttonblog{
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+}
+.textcontact{
+    font-size: larger;
+    text-align: center;
+    margin:auto;
+}
+.tablecont{
+    margin: auto;
+}
